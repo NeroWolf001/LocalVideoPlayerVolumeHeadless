@@ -1,2 +1,7 @@
 # LocalVideoPlayerVolumeHeadless
- This is a Neos mod for Headless Servers. This mod will make any videoplayer spawed have a default volume of 0 and local player volume control.
+[NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos](https://neos.com/) headless that sets the default video player to 0 and local volume.
+
+# Installation
+1. Install [NeosModLoader](https://github.com/zkxs/NeosModLoader).
+2. Place [ScrewYourScaleCompensation.dll](<directdownload link here>) into your nml_mods folder. This folder should be at C:\Program Files (x86)\Steam\steamapps\common\NeosVR\nml_mods for a default install. You can create it if it's missing, or if you launch the game once with NeosModLoader installed it will create the folder for you.
+3. Start the game. If you want to verify that the mod is working you can check your Neos logs.
