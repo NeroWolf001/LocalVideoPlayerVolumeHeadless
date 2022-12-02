@@ -19,6 +19,7 @@ namespace LocalVideoVolumeHeadless
         {
             private static void Postfix(VideoPlayer __instance, SyncRef<AudioOutput> ____mainAudioOutput)
             {
+                if(!__instance.World.IsAuthority) return;
                 ValueUserOverride<float> valueUserOverride = __instance.Slot.AttachComponent<ValueUserOverride<float>>(true, null);
                 valueUserOverride.CreateOverrideOnWrite.Value = true;
                 valueUserOverride.Target.Target = ____mainAudioOutput.Target.Volume;
@@ -27,4 +28,3 @@ namespace LocalVideoVolumeHeadless
         }
     }
 }
-    
